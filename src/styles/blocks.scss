@@ -1,0 +1,61 @@
+.block {
+  padding: 15px;
+  z-index: 2;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 102px -105px rgba(0,0,0,0.17);
+  -moz-box-shadow: 0px 0px 102px -105px rgba(0,0,0,0.17);
+  box-shadow: 0px 0px 102px -105px rgba(0,0,0,0.17);
+
+  &.no-padding {
+    padding: 0;
+  }
+  &.top-padding {
+    padding: 15px 0 0 0;
+  }
+  &.no-side-padding {
+    padding: 15px 0;
+  }
+
+  &.white {
+    background: $white;
+  }
+
+  &.darkest {
+    background: $darkest;
+    color: $clouds;
+  }
+
+  &.bordered {
+    border: 1px solid $silver;
+  }
+}
+
+.big-green-input {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+  color: $emerald;
+  font-weight: 300;
+  border-bottom: 1px solid $emerald;
+
+  span {
+    font-size: 14px;
+  }
+  input {
+    font-weight: 300;
+    background: transparent;
+    border: none;
+    width: 70px;
+  }
+}
+
+.add-block {
+  @include transition(.3s);
+  border: 1.3px dashed $silver;
+  color: $silver;
+  text-align: center;
+  &:hover {
+    border: 1.3px dashed $concrete;
+    color: $concrete;
+  }
+}

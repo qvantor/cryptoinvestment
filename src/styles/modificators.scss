@@ -1,0 +1,45 @@
+.m-top-20 {
+  margin-top: 20px;
+}
+
+.m-top-10 {
+  margin-top: 10px;
+}
+
+.m-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.small-header {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.absolite-right {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 1;
+}
+
+.vertical-top {
+  vertical-align: super;
+}
+
+.text-tin {
+  font-weight: 300;
+}
+
+.silver {
+  color: $clouds;
+}
+
+.increase {
+  color: $nephritis;
+}
+
+.decrease {
+  color: $alizarin;
+}

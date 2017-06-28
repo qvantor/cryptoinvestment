@@ -1,0 +1,35 @@
+.core-layout {
+  height: 100vh;
+  .ant-layout-header {
+    background: #2c3e50;
+    padding: 0;
+    height: 57px;
+
+    .logo {
+      position: relative;
+      font-size: 25px;
+      font-weight: 600;
+      height: 57px;
+      line-height: 57px;
+      text-transform: uppercase;
+      color: #fff;
+      width: 260px;
+
+      span {
+        font-weight: 100;
+      }
+      .info {
+        position: absolute;
+        right: 5px;
+        top: 42px;
+        font-size: 10px;
+        text-transform: none;
+        line-height: 10px;
+        font-weight: 100;
+      }
+    }
+  }
+  .ant-layout-footer {
+    text-align: center;
+  }
+}

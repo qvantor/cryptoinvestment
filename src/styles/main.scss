@@ -1,0 +1,32 @@
+@import "variables/colors";
+@import "variables/mixins";
+@import 'base';
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~antd/dist/antd.css';
+@import 'antd';
+@import 'blocks';
+@import 'modificators';
+
+// Some best-practice CSS that's useful for most apps
+// Just remove them if they're not what you want
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
