@@ -26,8 +26,9 @@ export function loadTicker (ticker) {
       if (ticker !== 'USDT_BTC') {
         data = data.map(item => {
           const USDBTC = tradeHistory['USDT_BTC'].list.find(btc => btc.date === item.date)
+          if (!USDBTC) return false
           return { ...item, weightedUSD: USDBTC.weightedAverage * item.weightedAverage }
-        })
+        }).filter(Boolean)
       }
       payload[ticker] = { list: data, loading: false, loaded: true, start }
       dispatch({ type: constants.TRADE_HISTORY_LOADED, payload })

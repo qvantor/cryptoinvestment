@@ -12,6 +12,7 @@ export function loadTickers () {
       .then(({ data }) => {
         const newD = {}
         Object.keys(tickersNames).map(item => {
+          if (!data[item]) return null
           newD[item] = data[item]
           newD[item].name = tickersNames[item]
         })

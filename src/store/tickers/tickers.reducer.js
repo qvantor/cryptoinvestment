@@ -9,6 +9,9 @@ export default function tickers (state = Model, action) {
     case constants.TICKERS_LIST_LOADED:
       return state.merge({ listLoading: false, list: action.payload })
 
+    case constants.TICKERS_LIST_FAIL:
+      return state.merge({ listLoading: false })
+
     default:
       return state
   }
